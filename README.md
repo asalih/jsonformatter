@@ -1,2 +1,2 @@
-# jsonformatter
-Offline json formatter with ace9
+# JsonFormatter
+Edit json with ace9, formats and makes it compact.
