@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/jquery.js"></script>
+    <script src="js/ace.js"></script>
+    <script src="js/editor.js"></script>
+    <style type="text/css">
+        body{
+            background: #e7e7e7;
+        }
+        #editor {
+            position: absolute;
+            width: 98%;
+            height: calc(100% - 100px);
+            margin-top: 20px;
+			margin-left: 5px;
+            -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+        }
+        .btn {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .b1 {
+            background-color: #4CAF50;
+        }
+        /* Green */
+        .b2 {
+            background-color: #008CBA;
+        }
+        /* Blue */
+        .b3 {
+            background-color: #f44336;
+        }
+        /* Red */
+        .b4 {
+            background-color: #e7e7e7;
+            color: black;
+        }
+        /* Gray */
+        .b5 {
+            background-color: #555555;
+        }
+        /* Black */
+    </style>
+</head>
+<body>
+    <button class="btn b1 format">Format JSON</button>
+    <button class="btn b2 minify">Compact JSON</button>
+    <br />
+    <div id="editor">
+
+
+    </div>
+</body>
+</html>
